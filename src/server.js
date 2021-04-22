@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(function (req, res, next) {
 
   // Website you wish to allow to connect
-  res.setHeader('Access-Control-Allow-Origin', 'admiring-hoover-ed1108.netlify.app');
+  res.setHeader('Access-Control-Allow-Origin', 'https://admiring-hoover-ed1108.netlify.app');
 
   // Request methods you wish to allow
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
