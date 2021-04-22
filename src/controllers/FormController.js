@@ -56,3 +56,5 @@ export default class FormController {
     return res.status(200).json({ data: req.body });
   }
 }
+
+module.exports = FormController;
