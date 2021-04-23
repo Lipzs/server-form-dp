@@ -1,11 +1,11 @@
 import express from 'express';
-import corsMd from './middlewares/cors';
+import { firewall } from './middlewares/firewall';
 
 import FormController from './controllers/FormController.js';
 
 const routes = express.Router();
 const formController = new FormController();
 
-routes.post('/schedule', corsMd/formController.doSchedule);
+routes.post('/schedule', firewall, formController.doSchedule);
 
 export default routes;
